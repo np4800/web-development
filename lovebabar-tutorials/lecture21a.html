@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            padding: 3px;
+            margin: 3px;
+        }
+        #boxLeft {
+            background-color: aqua;
+            border: 1px solid black;
+            width: 50%;
+            margin: 3px;
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #boxRight {
+            background-color: yellow;
+            border: 1px solid black;
+            width: 50%;
+            margin: 3px;
+            padding: 3px;
+        }
+        p {
+            border: 1px solid black;
+        }
+        img {
+            width: 500px;
+            height: 500px;
+        }
+        @media (max-width: 650px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxLeft">
+            <p>ST</p>
+            <p>NP</p>
+        </div>
+
+        <div id="boxRight">
+            <img src="https://e0.pxfuel.com/wallpapers/39/255/desktop-wallpaper-stylish-boys-cool-profile-pics-dp-for-facebook-whatsapp-2019-boy-smoke.jpg" alt="image-1">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 1000px;
+            background-color: beige;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            /* flex-wrap: wrap; */
+            align-items: start;
+            align-content: center;
+            justify-content: start;
+
+        }
+        .container1 {
+            background-color: beige;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+           
+        }
+
+        .box1 {
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box1 {
+            background-color: orange;
+            border: 1px solid black;
+            border-radius: 5px;
+            order: 500;
+            flex-shrink: 4;
+        }
+        #box2 {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        #box3 {
+            background-color: green;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        #box4 {
+            background-color: blue;
+            border: 1px solid black;
+            border-radius: 5px;
+            order: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box" id="box1">Flex-1</div>
+        <div class="box" id="box2">Flex-2</div>
+        <div class="box" id="box3">Flex-3</div>
+        <div class="box" id="box4">Flex-4</div>
+        
+    </div>
+
+    <!-- <div class="container1">
+        <div class="box1" id="box1">Flex-1</div>
+        <div class="box1" id="box2">Flex-2</div>
+        <div class="box1" id="box3">Flex-3</div>
+        <div class="box1" id="box4">Flex-4</div>
+    </div> -->
+</body>
+</html>

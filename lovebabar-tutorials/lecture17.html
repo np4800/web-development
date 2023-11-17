@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid green;
+            background-color: beige;
+            height: 5000px;
+        }
+
+        .box {
+            background-color: aquamarine;
+            border: 1px solid black;
+            height: 4000px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .image2 {
+            /* relative positions are always calculated based on the current window and it maintains the gap from whereever it has been shifted by any property like top/left/right/bottom */
+            /* position: relative; 
+            top: 100px;
+            left: 100px; */
+
+            /* aboslute position are always cacluated based on the nearest positioned ancestor tag in this case div here and it does not maintain any gap   */
+            position: absolute;
+            top: 200px
+        }
+
+        .image3 {
+            /* sticky positioning would be relative to the parent container */
+            position: sticky;
+            top: 100px;
+        }
+
+        .image4 {
+            /* fixed positioning would be fixed in the entire page e.g chatbot on the lower right corner of any webpage */
+            position: fixed;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://imgv3.fotor.com/images/gallery/AI-3D-Female-Profile-Picture.jpg" class="image1" alt="img1" />
+        <img src="https://media.istockphoto.com/id/1154642632/photo/close-up-portrait-of-brunette-woman.jpg?s=612x612&w=0&k=20&c=d8W_C2D-2rXlnkyl8EirpHGf-GpM62gBjpDoNryy98U=" class="image2" alt="img2" />
+        <img src="https://e0.pxfuel.com/wallpapers/39/255/desktop-wallpaper-stylish-boys-cool-profile-pics-dp-for-facebook-whatsapp-2019-boy-smoke.jpg" class="image3" alt="img3" />
+        <img src="https://tostatus.in/wp-content/uploads/2023/05/profile-picture-insta-profile-pic-for-girl.jpg" class="image4" alt="img4" />
+    </div>
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>

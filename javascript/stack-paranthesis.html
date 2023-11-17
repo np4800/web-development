@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Problem: Implement Paranthesis Match using Stack</h1>
+    <p id="stack-param"></p>
+    <script>
+        var temp
+        var popped
+        class StackNode {
+            constructor(data) {
+                this.data = data;
+                this.next = null
+            }
+        }
+
+        class Stack {
+            constructor() {
+                this.root = null
+            }
+
+            isEmpty() {
+                if (this.root == null) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+
+            push(data) {
+                
+                const newNode = new StackNode(data)
+                newNode.next = this.root
+                this.root = newNode
+                document.write(data + " pushed to stack<br/>"); 
+            }
+
+            pop() {
+                if (this.isEmpty()){
+                    return -1
+                }
+                temp = this.root
+                this.root = this.root.next
+                popped = temp.data
+                document.write(popped + " Popped from Stack <br/>"); 
+
+            }
+
+            peek() {
+                if (this.isEmpty()) {
+                    return -1
+                }
+                return this.root.data
+            }
+        }
+        const stack = new Stack()
+        stack.push("A");
+        stack.push("B");
+        stack.push("C");
+
+        stack.pop()
+        stack.pop()
+        document.write(stack.peek() + " is top element <br/>"); 
+        stack.pop()
+        stack.pop()
+
+
+
+    </script>
+    
+</body>
+</html>

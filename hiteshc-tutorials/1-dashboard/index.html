@@ -1,0 +1,254 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPE Telemetry Admin</title>
+    <!-- ========Styles======== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ===========Navigation Side Bar============= -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon" ><ion-icon name="logo-apple"></ion-icon></span>
+                        <span class="title">Brand Name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="information-outline"></ion-icon></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="assets/imgs/user1.png" alt=""></img>
+                </div>
+            </div>
+            <!-- ========== Cards ========== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,500</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Sales</div>   
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div>
+                        <div class="numbers">289</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,100</div>
+                        <div class="cardName">Earnings</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== Chart JS ========== -->
+            <div class="chartsBx">
+                <div class="chart"><canvas id="chart-1"></canvas> </div>
+                <div class="chart"><canvas id="chart-2"></canvas></div>
+            </div>
+
+            <!-- ========== Order Details List ========== -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MacBook Pro</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>$500</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>MacBook M1</td>
+                                <td>$2200</td>
+                                <td>Refund</td>
+                                <td><span class="status returned">Returned</span></td>
+                            </tr>
+                            <tr>
+                                <td>Apple IPad</td>
+                                <td>$1000</td>
+                                <td>Due</td>
+                                <td><span class="status inProgress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>MacBook Pro</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>$500</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>MacBook M1</td>
+                                <td>$2200</td>
+                                <td>Refund</td>
+                                <td><span class="status returned">Returned</span></td>
+                            </tr>
+                            <tr>
+                                <td>Apple IPad</td>
+                                <td>$1000</td>
+                                <td>Due</td>
+                                <td><span class="status inProgress">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- ========== New Customers =========== -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="imgBx"><img src="assets/imgs/user1.png" alt="user1"></div>
+                            </td>
+                            <td>
+                                <h4>Monica Ballucci <br> <span>Italy</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="imgBx"><img src="assets/imgs/user2.png" alt="user1"></div>
+                            </td>
+                            <td>
+                                <h4>Martina Hingis <br> <span>Germany</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="imgBx"><img src="assets/imgs/user1.png" alt="user1"></div>
+                            </td>
+                            <td>
+                                <h4>Sania Mirza <br> <span>India</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="imgBx"><img src="assets/imgs/user2.png" alt="user1"></div>
+                            </td>
+                            <td>
+                                <h4>Maria Sharapova <br> <span>Rusia</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ============JavaScript======== -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- =========== Charts JS ======== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="assets/js/chartsJS.js"></script>
+
+    <!-- ============icons============= -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 

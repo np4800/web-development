@@ -1,0 +1,52 @@
+@font-face {
+    font-family: myFirstFont1;
+    src: url(../../fonts/MetricHPEXS-Web/MetricHPEXSMedium-Regular.woff);
+  }
+
+@font-face {
+    font-family: myFirstFont2;
+    src: url(../../fonts/MetricHPEXS-Web/MetricHPEXSThin-Regular.woff);
+  }
+
+@font-face {
+    font-family: myFirstFont3;
+    src: url(../../fonts/MetricHPEXS-Web/MetricHPEXS-Italic.woff);
+  }
+
+h1 {
+    font-family: myFirstFont1;
+}
+
+h2 {
+    font-family: myFirstFont2;
+    color: bisque;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-family: myFirstFont3;
+   
+}
+p {
+    font-family: myFirstFont2;
+    color: bisque;
+}
+.poster {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 100px;
+  text-align: center;
+  background-color: black;
+  
+}
+
+.motivation-img {
+  border: 5px solid white;
+  width: 100%;
+}
+/* 
+* {
+    font-family: myFirstFont2;
+} */
+  

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: semiboldRegular;
+    src: url(../fonts/MetricHPEXS-Web/MetricHPEXSSemibold-Regular.woff);
+  }
+
+@font-face {
+    font-family: smallRegular;
+    src: url(../fonts/MetricHPEXS-Web/MetricHPEXS-Regular.woff);
+  }
+
+@font-face {
+    font-family: mediumRegular;
+    src: url(../fonts/MetricHPEXS-Web/MetricHPEXSMedium-Regular.woff);
+  }
+
+h1 {
+    font-family: semiboldRegular;
+}
+
+h2 {
+    font-family: semiboldRegular;
+    text-transform: capitalize;
+
+}
+
+h3 {
+    font-family: semiboldRegular;
+   
+}
+p {
+    font-family: mediumRegular;
+    color: black;
+}
+.poster {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 100px;
+  text-align: center;
+  background-color: black;
+  
+}
+
+.motivation-img {
+  border: 5px solid white;
+  width: 100%;
+}
+
+.form1 {
+    font-family: mediumRegular;
+}
+
+.form2 {
+    font-family: smallRegular;
+}
+
+.mypara {
+  border: 2px;
+  background-color: #00E8CF;
+  border: solid black 1.5px;
+  padding: 20px;
+  margin: 10px;
+  font-
+}
+
+
+/* 
+* {
+    font-family: myFirstFont2;
+} */
+  
