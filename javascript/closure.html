@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // document.getElementById('orange').onclick = ()=> {
+    //     document.body.style.backgroundColor = `orange`
+    // }
+
+    // document.getElementById('green').onclick = ()=> {
+    //     document.body.style.backgroundColor = `lightgreen`
+    // }
+    
+    function clickHandler(color) {
+
+        return () => {
+            document.body.style.backgroundColor = `${color}` // This happens due to the lexical and closure concept where inner function has the access to the outer functions
+        }
+    }
+
+    document.getElementById('orange').onclick = clickHandler('orange')
+    document.getElementById('green').onclick = clickHandler('lightgreen')
+    
+
+</script>
+</html>

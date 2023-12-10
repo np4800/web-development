@@ -1,0 +1,15 @@
+{
+  "name": "chaibackend",
+  "version": "1.0.0",
+  "description": "Demo Project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Nikhil Patel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
